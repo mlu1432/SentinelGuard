@@ -1,0 +1,46 @@
+/* IconGrid.css */
+
+.main-home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Background color for the whole page */
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Creates a responsive grid */
+    gap: 20px; /* Space between icons */
+    padding: 20px;
+    width: 100%; /* Full width to utilize space efficiently */
+    max-width: 600px; /* Maximum width to prevent overly stretching on larger screens */
+    justify-items: center; /* Center items horizontally */
+  }
+  
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the icon and label vertically */
+  }
+  
+  .icon-container label {
+    margin-top: 8px; /* Space between the icon and its label */
+    color: #333; /* Text color for labels */
+    font-family: Arial, sans-serif; /* Font family for consistency */
+    text-align: center; /* Ensures text is centered under the icon */
+  }
+  
+  @media (max-width: 480px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr); /* Adjusts to 2 columns on small screens */
+      gap: 15px; /* Reduces the gap for smaller screens */
+    }
+  }
+  
+  @media (min-width: 481px) and (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr); /* Adjusts to 3 columns for medium screens */
+    }
+  }  

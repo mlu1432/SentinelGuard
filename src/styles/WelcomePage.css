@@ -1,0 +1,90 @@
+/* Define color variables for theming and consistency */
+:root {
+  --primary-color: #4CAF50;
+  --link-color: #0645AD;
+  --google-btn-color: #db4437;
+  --facebook-btn-color: #4267B2;
+  --primary-color-dark: #388E3C; /* Darker shade for primary color */
+  --google-btn-color-dark: #c1351d; /* Darker shade for Google button */
+  --facebook-btn-color-dark: #365899; /* Darker shade for Facebook button */
+}
+
+/* Base mobile styles for the welcome page */
+.welcome-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Styles for the logo */
+.logo {
+  width: 150px; /* Adjust the size as needed */
+  margin-bottom: 20px;
+}
+
+/* Styles for the tagline text */
+.tagline {
+  margin-bottom: 20px;
+  font-size: 1.2em; /* Larger font for readability */
+}
+
+/* General styles for buttons, with variations for different types */
+.get-started-button, .google-login-button, .facebook-login-button {
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.get-started-button {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.google-login-button {
+  background-color: var(--google-btn-color);
+  color: white;
+}
+
+.facebook-login-button {
+  background-color: var(--facebook-btn-color);
+  color: white;
+}
+
+/* Hover effects for buttons */
+.get-started-button:hover, .google-login-button:hover, .facebook-login-button:hover {
+  background-color: darken(var(--primary-color), 10%);
+}
+
+/* Styles for the sign-in text and link */
+.sign-in-text {
+  margin-top: 20px;
+}
+
+.sign-in-link {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+/* Responsive adjustments for different devices */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .logo {
+    width: 120px; /* Smaller logo for smaller devices */
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .logo {
+    width: 140px; /* Slightly larger logo for newer iPhones */
+  }
+}
+
+/* Additional media queries can be added for larger devices as needed */

@@ -1,0 +1,59 @@
+/* SafetyTool.css */
+
+.safety-tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 15px; /* Space between buttons */
+  }
+  
+  .safety-tools button {
+    padding: 15px 30px; /* Ample padding for easy tapping */
+    font-size: 16px; /* Readable font size */
+    color: white; /* Text color for contrast */
+    border: none;
+    border-radius: 5px; /* Rounded corners for a modern look */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for visual feedback */
+    width: 100%; /* Full width for easier tap targets */
+    max-width: 300px; /* Maximum width to maintain usability */
+  }
+  
+  /* Specific styles for each button to use color coding for quick recognition */
+  .safety-tools button:nth-child(1) {
+    background-color: #dc3545; /* Red for emergency */
+  }
+  
+  .safety-tools button:nth-child(1):hover {
+    background-color: #c82333; /* Darker shade on hover */
+  }
+  
+  .safety-tools button:nth-child(2) {
+    background-color: #17a2b8; /* Blue for sharing location */
+  }
+  
+  .safety-tools button:nth-child(2):hover {
+    background-color: #138496; /* Darker shade on hover */
+  }
+  
+  .safety-tools button:nth-child(3) {
+    background-color: #ffc107; /* Yellow for reporting an incident */
+  }
+  
+  .safety-tools button:nth-child(3):hover {
+    background-color: #e0a800; /* Darker shade on hover */
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 480px) {
+    .safety-tools {
+      flex-direction: column;
+      gap: 10px; /* Reduce gap on smaller screens */
+    }
+  
+    .safety-tools button {
+      padding: 12px 20px; /* Adjust padding for smaller screens */
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+  }  

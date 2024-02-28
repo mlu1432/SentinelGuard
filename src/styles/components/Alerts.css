@@ -1,0 +1,57 @@
+/* Alerts.css */
+
+/* Container for all alerts */
+.alerts-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    z-index: 1000; /* Ensure alerts are above other content */
+  }
+  
+  /* Base style for an alert */
+  .alert {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Style for the dismiss button within an alert */
+  .alert button {
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+  }
+  
+  .alert button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Specific styles for error alerts */
+  .alert.error {
+    background-color: #d32f2f;
+  }
+  
+  /* Specific styles for warning alerts */
+  .alert.warning {
+    background-color: #ffa000;
+  }
+  
+  /* Add additional styles for other types of alerts if necessary */
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 480px) {
+    .alerts-container {
+      top: 10px; /* Adjust positioning for smaller screens */
+      right: 10px; /* Adjust to ensure it's not too close to the screen edge */
+      width: 90%; /* Make width responsive */
+      max-width: 300px; /* Keep the maximum width to 300px */
+    }
+  }  

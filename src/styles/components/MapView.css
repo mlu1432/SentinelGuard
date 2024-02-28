@@ -1,0 +1,20 @@
+/* MapView.css for better responsiveness */
+
+.google-map-container {
+    width: 80vw; /* Adjust width as a percentage of the viewport width */
+    height: 50vh; /* Adjust height as a percentage of the viewport height */
+    max-width: 600px; /* Ensures the map does not become too wide on larger screens */
+    max-height: 400px; /* Ensures the map does not become too tall on larger screens */
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    .google-map-container {
+      width: 95vw; /* Allows the map to fill more of the screen on small devices */
+      height: 40vh; /* Adjusts the height based on device's viewport */
+    }
+  }
+  
